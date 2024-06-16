@@ -634,6 +634,8 @@ def _post_video(driver) -> None:
         )
     WebDriverWait(driver, config['explicit_wait']).until(post_confirmation)
 
+    time.sleep(3)
+
     logger.debug(green('Video posted successfully'))
 
 
